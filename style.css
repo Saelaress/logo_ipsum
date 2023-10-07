@@ -425,19 +425,37 @@ img, picture {
   font-size: 1.8rem;
 }
 
-.subscribe .position {
-  text-align: center;
+.subscribe_content {
   display: flex;
   flex-direction: column;
   padding-block: 12.5rem;
   color: var(--textSecondary);
   text-align: center;
   align-items: center;
-  justify-content: center;
 }
 
 .subscribe .position> :not(:first-child) {
   max-width: 100%;
+}
+
+.subscribe .btn-secondary {
+  border: 1px solid var(--textSecondary);
+  color: var(--textSecondary);
+}
+
+.subscribe .buttons {
+  margin-top: 0rem;
+  min-width: 55%;
+  justify-content: center;
+}
+
+.subscribe .pre-header, .subscribe .page_title {
+  margin-bottom: 0;
+}
+
+.subscribe_content> :not(:first-child) {
+  max-width: 100%;
+  margin-top: 2rem;
 }
 
 /*-----------------------------768--------------------------------*/
@@ -464,7 +482,12 @@ img, picture {
   }
 
   .page_title {
-    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+
+  .subscribe_content> :not(:first-child) {
+    max-width: 80%;
+    margin-top: 4rem;
   }
 }
 
