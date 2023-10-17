@@ -481,6 +481,11 @@ img, picture {
 
 .features .page_title {
   margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.features .pre-header {
+  margin-bottom: 0rem;
 }
 
 .features_img {
@@ -650,8 +655,8 @@ img, picture {
   margin-left: 15em;
   margin-right: 15em;
   margin-top: 30em;
-  min-height: 25vw;
-  max-height: 30vw;
+  /* min-height: 25vw;
+  max-height: 30vw; */
 }
 
 .slide-logo {
@@ -667,7 +672,7 @@ img, picture {
   display: grid;
   grid-template-columns: 30px 1fr 30px;
   max-width: 100%;
-  margin-top: 30em;
+  margin-top: 15em;
   /* justify-content: center;
   align-items: center; */
 }
@@ -746,6 +751,68 @@ img, picture {
   to {
     opacity: 1
   }
+}
+
+.border {
+  margin: 12.5rem 0px;
+  border: 1px solid rgba(10, 18, 30, 0.025);
+  height: 0px;
+}
+
+.signing {
+  display: flex;
+  flex-direction: column;
+}
+
+.signing_title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signing .pre-header {
+  margin-bottom: 0rem;
+}
+
+.signing .page_title {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.signing> :not(:first-child) {
+  margin-top: 1rem;
+}
+
+.signing_slider {
+  max-width: 250em;
+  height: 46rem;
+}
+
+.main> :last-child {
+  margin-bottom: 15rem;
+}
+
+.outro {
+  background: var(--secondary);
+  margin-top: -1rem;
+  padding-bottom: 16rem;
+}
+
+.outro .page_title {
+  color: var(--textSecondary);
+  margin-top: 0rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.outro .btn-secondary {
+  border: 1px solid var(--textSecondary);
+  color: var(--textSecondary);
+}
+
+.outro .buttons {
+  justify-content: center;
 }
 
 /*-----------------------------768--------------------------------*/
