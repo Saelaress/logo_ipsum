@@ -616,7 +616,7 @@ img, picture {
 
 .gr-item {
   background: var(--cardBackground);
-  box-shadow: var(--shadow-md);
+  /* box-shadow: var(--shadow-md); */
   opacity: 1;
   cursor: pointer;
   border-radius: 0.6rem;
@@ -628,7 +628,7 @@ img, picture {
 }
 
 .gr-item-wrapper {
-  padding: 2.5rem;
+  /* padding: 2.5rem; */
 }
 
 .gr-item-title {
@@ -759,34 +759,59 @@ img, picture {
   height: 0px;
 }
 
-.signing {
+.signin-header {
+  text-align: center;
+}
+
+.signin-wrapper {
+  margin: 0px;
+  max-width: 35rem;
+  text-align: start;
+}
+
+.signin-pic {
+  max-width: 100%;
+}
+
+.signin-text {
+  margin-left: 1em;
+
+}
+
+.signin-item-title {
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.signin-item-text {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+/* ---------------- */
+
+.signin-grid {
   display: flex;
   flex-direction: column;
 }
 
-.signing_title {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.signin-wrapper {
+  margin-bottom: 4rem;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
-.signing .pre-header {
-  margin-bottom: 0rem;
+.signin-grid {
+  padding: 0 15rem;
 }
 
-.signing .page_title {
-  margin-bottom: 0;
-  margin-top: 1rem;
-}
-
-.signing> :not(:first-child) {
-  margin-top: 1rem;
-}
-
-.signing_slider {
-  max-width: 250em;
-  height: 46rem;
+.signin {
+  margin-top: 20em;
 }
 
 .main> :last-child {
@@ -813,6 +838,71 @@ img, picture {
 
 .outro .buttons {
   justify-content: center;
+}
+
+footer {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  background: var(--secondary);
+  color: var(--textSecondary);
+}
+
+.footer_text {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.footer_col {
+  flex: 0 1 40%;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.footer_title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer_col> :not(:first-child) {
+  margin-top: 1rem;
+}
+
+.footer_desc {
+  font-size: 1.6rem;
+}
+
+.footer_desc a {
+  text-decoration: none;
+  color: var(--textSecondary);
+}
+
+.footer_logo {
+  flex-direction: column;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.social {
+  text-decoration: none;
+}
+
+.social> :not(:first-child) {
+  margin-left: 1rem;
+}
+
+.social a {
+  text-decoration: none;
 }
 
 /*-----------------------------768--------------------------------*/
@@ -845,6 +935,42 @@ img, picture {
   .subscribe_content> :not(:first-child) {
     max-width: 80%;
     margin-top: 4rem;
+  }
+
+  .footer_text {
+    flex-flow: row;
+  }
+
+  .footer_col {
+    flex: none;
+    margin-right: 5rem;
+  }
+
+  .footer_logo {
+    flex-direction: row;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 50px;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+  }
+
+  .signin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5em 15em 0;
+    grid-column-gap: 2em;
+  }
+
+  .signin {
+    margin-top: 20em;
+  }
+
+  .signin-wrapper {
+    margin-bottom: 4rem;
   }
 }
 
@@ -906,6 +1032,24 @@ img, picture {
     margin-right: 4rem;
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 50px;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+  }
+
+  .signin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5em 5em 0;
+    grid-column-gap: 2em;
+  }
+
+  .signin {
+    margin-top: 15em;
+  }
 
 
   /*----------------------*/
